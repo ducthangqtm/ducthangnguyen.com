@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nguyễn Đức Thắng | Senior IT Network Engineer | ducthangnguyen.com</title>
+  
+  <!-- SEO & OpenGraph Meta Tags -->
+  <meta name="description" content="Nguyễn Đức Thắng - Senior IT Network Engineer với hơn 10 năm kinh nghiệm quản trị và vận hành hạ tầng mạng quy mô lớn, kho vận 40.000m², ứng dụng Python, AI & AIOps tự động hoá 24/7.">
+  <meta name="keywords" content="Nguyễn Đức Thắng, Senior IT Network Engineer, Quản trị mạng, Cisco, Aruba, MikroTik, Python Automation, AIOps, Cloudflare Pages, ducthangnguyen.com, thangit.com">
+  <meta name="author" content="Nguyễn Đức Thắng">
+  <meta name="robots" content="index, follow">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ducthangnguyen.com/">
+  <meta property="og:title" content="Nguyễn Đức Thắng | Senior IT Network Engineer">
+  <meta property="og:description" content="Hơn 10 năm kinh nghiệm quản trị hạ tầng mạng Enterprise, kho vận 40.000m², tiên phong ứng dụng Python & AIOps.">
+  <meta property="og:image" content="./assets/images/avatar.jpg">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nguyễn Đức Thắng | Senior IT Network Engineer">
+  <meta name="twitter:description" content="Portfolio và CV trực tuyến của Nguyễn Đức Thắng - Senior IT Network Engineer.">
+  <meta name="twitter:image" content="./assets/images/avatar.jpg">
+  
+  <link rel="canonical" href="https://ducthangnguyen.com/">
+  <link rel="icon" type="image/svg+xml" href="./assets/images/logo-tit.svg">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans selection:bg-emerald-500/25 selection:text-emerald-300 relative min-h-screen overflow-x-hidden">
+
+  <!-- Ambient Light Effects (Non-intrusive) -->
+  <div class="fixed inset-0 pointer-events-none z-0 bg-ambient-glow"></div>
+  <div class="fixed inset-0 pointer-events-none z-0 bg-grid-pattern opacity-70"></div>
+
+  <!-- ========================================================================= -->
+  <!-- 1. HEADER / NAVBAR (Sticky, Backdrop-blur, Phủ rộng)                      -->
+  <!-- ========================================================================= -->
+  <header class="sticky top-0 z-50 w-full backdrop-blur-xl bg-slate-950/85 border-b border-slate-800/80 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo & Tên & Status Badge -->
+      <a href="#" class="flex items-center gap-3.5 group">
+        <div class="relative w-10 h-10 rounded-xl overflow-hidden p-0.5 bg-gradient-to-br from-emerald-500/40 via-slate-800 to-cyan-500/40 border border-slate-700/60 shadow-md transition-transform group-hover:scale-105">
+          <img src="./assets/images/logo-tit.svg" alt="TiT Logo" class="w-full h-full object-cover">
+        </div>
+        <div class="flex flex-col">
+          <span class="text-base sm:text-lg font-bold text-white tracking-tight group-hover:text-emerald-400 transition-colors">
+            Nguyễn Đức Thắng
+          </span>
+          <div class="flex items-center gap-2">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+            </span>
+            <span class="text-xs font-medium text-emerald-400/90 tracking-wide">Senior IT Network Engineer</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="hidden md:flex items-center gap-1 lg:gap-2">
+        <a href="#about" class="px-3.5 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-900/80 transition-all">
+          Giới thiệu
+        </a>
+        <a href="#ecosystem" class="px-3.5 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-900/80 transition-all">
+          Hệ sinh thái
+        </a>
+        <a href="#experience" class="px-3.5 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-900/80 transition-all">
+          Kinh nghiệm
+        </a>
+        <a href="#skills" class="px-3.5 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-900/80 transition-all">
+          Kỹ năng & Học vấn
+        </a>
+        <a href="#contact" class="px-3.5 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-900/80 transition-all">
+          Liên hệ
+        </a>
+      </nav>
+
+      <!-- Quick Action: Zalo Button -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="https://zalo.me/0986192092" target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2.5 px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 hover:border-emerald-500/60 shadow-sm hover:shadow-[0_0_20px_-3px_rgba(16,185,129,0.3)] transition-all duration-200">
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          <span>Zalo: 0986.192.092</span>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button id="mobile-menu-btn" aria-label="Mở menu" class="md:hidden p-2 rounded-xl bg-slate-900 text-slate-300 border border-slate-800 hover:text-white hover:bg-slate-850">
+        <i data-lucide="menu" class="w-6 h-6" id="menu-icon"></i>
+      </button>
+
+    </div>
+
+    <!-- Mobile Dropdown Navigation -->
+    <div id="mobile-menu" class="hidden md:hidden border-b border-slate-800 bg-slate-950/95 backdrop-blur-2xl px-5 py-5 space-y-2">
+      <a href="#about" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-300 hover:text-white hover:bg-slate-900">
+        Giới thiệu
+      </a>
+      <a href="#ecosystem" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-300 hover:text-white hover:bg-slate-900">
+        Hệ sinh thái
+      </a>
+      <a href="#experience" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-300 hover:text-white hover:bg-slate-900">
+        Kinh nghiệm
+      </a>
+      <a href="#skills" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-300 hover:text-white hover:bg-slate-900">
+        Kỹ năng & Học vấn
+      </a>
+      <a href="#contact" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-300 hover:text-white hover:bg-slate-900">
+        Liên hệ
+      </a>
+      <div class="pt-3 border-t border-slate-800/80">
+        <a href="https://zalo.me/0986192092" target="_blank" rel="noopener noreferrer"
+           class="flex items-center justify-center gap-2.5 w-full py-3 rounded-xl font-semibold text-sm bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          <span>Zalo: 0986.192.092</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main class="relative z-10">
+
+    <!-- ======================================================================= -->
+    <!-- 2. HERO SECTION (Split 2 cột trên Desktop, max-w-6xl/7xl mx-auto)      -->
+    <!-- ======================================================================= -->
+    <section id="about" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-16 lg:pt-20 lg:pb-24">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Cột trái: Thông tin cá nhân & CTA -->
+        <div class="lg:col-span-7 space-y-6 sm:space-y-8">
+          
+          <!-- Pill Badge Chức Danh & Công Nghệ -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-slate-800 text-xs font-medium text-slate-300 shadow-inner">
+            <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+            <span>Hạ tầng Mạng Doanh Nghiệp & Tự động hoá AIOps</span>
+          </div>
+
+          <!-- Headline -->
+          <div class="space-y-3">
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+              Xin chào, tôi là <br class="hidden sm:inline">
+              <span class="text-white">Nguyễn Đức Thắng</span>
+            </h1>
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 bg-clip-text text-transparent">
+              Senior IT Network Engineer
+            </h2>
+          </div>
+
+          <!-- Giới thiệu vắn tắt -->
+          <p class="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl font-normal">
+            Hơn <strong class="text-emerald-400 font-semibold">10 năm kinh nghiệm</strong> quản trị và vận hành hạ tầng mạng quy mô lớn (Doanh nghiệp, kho vận <strong class="text-white font-medium">40.000m²</strong>). Tiên phong ứng dụng <strong class="text-cyan-400 font-medium">Python, AI & AIOps</strong> tự động hoá vận hành hệ thống 24/7. Đồng thời duy trì kỷ luật lối sống với dự án <strong class="text-amber-400 font-medium">Cardio 100 ngày nhảy dây</strong>.
+          </p>
+
+          <!-- Focus Tags -->
+          <div class="flex flex-wrap gap-2.5 pt-1">
+            <span class="px-3 py-1 rounded-lg bg-slate-900 text-slate-400 border border-slate-800 text-xs font-mono">LAN/WAN & VLANs</span>
+            <span class="px-3 py-1 rounded-lg bg-slate-900 text-slate-400 border border-slate-800 text-xs font-mono">Cisco & Aruba</span>
+            <span class="px-3 py-1 rounded-lg bg-slate-900 text-slate-400 border border-slate-800 text-xs font-mono">MikroTik RouterOS</span>
+            <span class="px-3 py-1 rounded-lg bg-slate-900 text-slate-400 border border-slate-800 text-xs font-mono">Python / Flask Automation</span>
+            <span class="px-3 py-1 rounded-lg bg-slate-900 text-slate-400 border border-slate-800 text-xs font-mono">Cloudflare Workers Edge</span>
+            <span class="px-3 py-1 rounded-lg bg-slate-900 text-slate-400 border border-slate-800 text-xs font-mono">Azure & Office 365</span>
+          </div>
+
+          <!-- Nhóm nút hành động chính (CTA buttons) -->
+          <div class="flex flex-wrap items-center gap-3.5 pt-2">
+            <!-- Nút tải CV Tiếng Việt -->
+            <a href="./assets/docs/cv-nguyen-duc-thang-vi.pdf" download="cv-nguyen-duc-thang-vi.pdf"
+               class="inline-flex items-center justify-center gap-2.5 px-5 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-sm tracking-wide transition-all duration-200 shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/35 hover:-translate-y-0.5 group">
+              <i data-lucide="download" class="w-4 h-4 transition-transform group-hover:translate-y-0.5"></i>
+              <span>Tải CV Tiếng Việt</span>
+            </a>
+
+            <!-- Nút tải CV Tiếng Anh -->
+            <a href="./assets/docs/cv-nguyen-duc-thang-en.pdf" download="cv-nguyen-duc-thang-en.pdf"
+               class="inline-flex items-center justify-center gap-2.5 px-5 py-3 rounded-xl bg-slate-900 hover:bg-slate-850 text-slate-200 hover:text-white border border-slate-700/80 hover:border-emerald-500/40 font-semibold text-sm transition-all duration-200 hover:-translate-y-0.5 shadow-sm group">
+              <i data-lucide="file-down" class="w-4 h-4 text-emerald-400 transition-transform group-hover:translate-y-0.5"></i>
+              <span>Tải CV Tiếng Anh</span>
+            </a>
+
+            <!-- Nút Gọi điện -->
+            <a href="tel:0986192092"
+               class="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-slate-900/60 hover:bg-slate-800 text-slate-300 hover:text-emerald-400 border border-slate-800 hover:border-slate-700 font-medium text-sm transition-all duration-200 hover:-translate-y-0.5">
+              <i data-lucide="phone" class="w-4 h-4"></i>
+              <span>Gọi 0986.192.092</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Cột phải: Khung ảnh cá nhân & Thẻ thống kê nổi bật -->
+        <div class="lg:col-span-5 flex flex-col items-center lg:items-end">
+          <div class="relative w-full max-w-sm sm:max-w-md">
+            
+            <!-- Glow background phía sau ảnh -->
+            <div class="absolute -inset-2 bg-gradient-to-r from-emerald-500/20 via-cyan-500/20 to-blue-500/20 rounded-3xl blur-2xl opacity-70 group-hover:opacity-100 transition duration-1000 -z-10"></div>
+
+            <!-- Khung ảnh cá nhân viền dạ quang nhẹ -->
+            <div class="relative rounded-3xl p-2 bg-gradient-to-b from-slate-800/90 to-slate-900/90 border border-slate-700/60 shadow-[0_0_50px_-10px_rgba(16,185,129,0.2)] overflow-hidden">
+              <div class="relative aspect-[4/5] w-full rounded-2xl overflow-hidden bg-slate-950">
+                <img src="./assets/images/avatar.jpg" 
+                     alt="Nguyễn Đức Thắng - Senior IT Network Engineer" 
+                     class="w-full h-full object-cover object-top transition duration-500 hover:scale-105"
+                     loading="eager">
+                
+                <!-- Overlay gradient tinh tế dưới chân ảnh -->
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+                
+                <!-- Micro badge góc dưới ảnh -->
+                <div class="absolute bottom-4 left-4 right-4 p-3 rounded-xl bg-slate-950/80 backdrop-blur-md border border-slate-800/80 flex items-center justify-between">
+                  <div class="flex items-center gap-2.5">
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                    <span class="text-xs font-semibold text-slate-200">Sẵn sàng vận hành 24/7</span>
+                  </div>
+                  <span class="text-xs font-mono text-emerald-400">Hà Nội & Bắc Ninh</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Highlight Badges (4 Thẻ thống kê nổi bật dạng Grid 2x2) -->
+            <div class="grid grid-cols-2 gap-3 mt-4">
+              
+              <!-- Badge 1: 10+ Năm Kinh Nghiệm -->
+              <div class="p-3.5 rounded-2xl bg-slate-900/80 backdrop-blur-sm border border-slate-800 hover:border-emerald-500/40 transition-all hover:-translate-y-0.5 group">
+                <div class="flex items-center gap-2 text-emerald-400 mb-1">
+                  <i data-lucide="award" class="w-4 h-4"></i>
+                  <span class="text-xs font-medium text-slate-400">Kinh nghiệm</span>
+                </div>
+                <div class="text-lg font-bold text-white group-hover:text-emerald-400 transition-colors">10+ Năm</div>
+                <div class="text-[11px] text-slate-400">Quản trị hạ tầng IT</div>
+              </div>
+
+              <!-- Badge 2: 500+ Thiết bị & Server -->
+              <div class="p-3.5 rounded-2xl bg-slate-900/80 backdrop-blur-sm border border-slate-800 hover:border-cyan-500/40 transition-all hover:-translate-y-0.5 group">
+                <div class="flex items-center gap-2 text-cyan-400 mb-1">
+                  <i data-lucide="server" class="w-4 h-4"></i>
+                  <span class="text-xs font-medium text-slate-400">Quy mô</span>
+                </div>
+                <div class="text-lg font-bold text-white group-hover:text-cyan-400 transition-colors">500+ Nodes</div>
+                <div class="text-[11px] text-slate-400">Thiết bị & Servers</div>
+              </div>
+
+              <!-- Badge 3: 40.000m² Kho vận -->
+              <div class="p-3.5 rounded-2xl bg-slate-900/80 backdrop-blur-sm border border-slate-800 hover:border-emerald-500/40 transition-all hover:-translate-y-0.5 group">
+                <div class="flex items-center gap-2 text-emerald-400 mb-1">
+                  <i data-lucide="building-2" class="w-4 h-4"></i>
+                  <span class="text-xs font-medium text-slate-400">Hạ tầng kho</span>
+                </div>
+                <div class="text-lg font-bold text-white group-hover:text-emerald-400 transition-colors">40.000 m²</div>
+                <div class="text-[11px] text-slate-400">Kho vận Logistics</div>
+              </div>
+
+              <!-- Badge 4: 100 Ngày Nhảy Dây Kỷ Luật -->
+              <div class="p-3.5 rounded-2xl bg-slate-900/80 backdrop-blur-sm border border-slate-800 hover:border-amber-500/40 transition-all hover:-translate-y-0.5 group">
+                <div class="flex items-center gap-2 text-amber-400 mb-1">
+                  <i data-lucide="flame" class="w-4 h-4"></i>
+                  <span class="text-xs font-medium text-slate-400">Lối sống</span>
+                </div>
+                <div class="text-lg font-bold text-white group-hover:text-amber-400 transition-colors">100 Ngày</div>
+                <div class="text-[11px] text-slate-400">Cardio Kỷ luật</div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- 3. HỆ SINH THÁI DỰ ÁN (Ecosystem Showcase - Bento Grid 3 cột Desktop)   -->
+    <!-- ======================================================================= -->
+    <section id="ecosystem" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-slate-850/80">
+      
+      <!-- Section Title Header -->
+      <div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-xs font-medium text-emerald-400">
+          <i data-lucide="layout-grid" class="w-3.5 h-3.5"></i>
+          <span>DIGITAL ECOSYSTEM</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          Hệ Sinh Thái Dự Án & Nền Tảng Cá Nhân
+        </h2>
+        <p class="text-sm sm:text-base text-slate-400">
+          Các nền tảng tiện ích thực tế, dự án nghiên cứu công nghệ phân tán Cloudflare Edge và hành trình rèn luyện kỷ luật thể chất.
+        </p>
+      </div>
+
+      <!-- Bento Grid 3 Columns on Desktop -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        
+        <!-- CARD 1: ThangIT.com -->
+        <div class="relative rounded-3xl p-7 bg-slate-900/60 backdrop-blur-md border border-slate-800 hover:border-emerald-500/50 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_15px_35px_-10px_rgba(16,185,129,0.18)] flex flex-col justify-between group">
+          
+          <div>
+            <!-- Top Card Header: Icon & External Badge -->
+            <div class="flex items-center justify-between mb-5">
+              <div class="w-13 h-13 p-3 rounded-2xl bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 group-hover:scale-110 transition-transform">
+                <i data-lucide="gauge" class="w-7 h-7"></i>
+              </div>
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/25">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
+                <span>Live Tool</span>
+              </span>
+            </div>
+
+            <!-- Title & Domain -->
+            <h3 class="text-2xl font-bold text-white group-hover:text-emerald-400 transition-colors flex items-center gap-2">
+              ThangIT.com
+              <i data-lucide="arrow-up-right" class="w-5 h-5 text-slate-500 group-hover:text-emerald-400 transition-colors"></i>
+            </h3>
+            <p class="text-sm font-semibold text-emerald-400/90 mt-1 mb-3">Hạ tầng & Tiện ích IT</p>
+
+            <!-- Description -->
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Bộ công cụ kiểm tra mạng do tôi tự phát triển: Đo tốc độ mạng Speedtest, tra cứu IP WAN, DNS, Subnet, Wi-Fi.
+            </p>
+
+            <!-- Feature Tags -->
+            <div class="flex flex-wrap gap-2 mt-5">
+              <span class="px-2.5 py-1 rounded-md bg-slate-800/90 text-slate-300 text-xs font-mono">Speedtest</span>
+              <span class="px-2.5 py-1 rounded-md bg-slate-800/90 text-slate-300 text-xs font-mono">WAN IP Lookup</span>
+              <span class="px-2.5 py-1 rounded-md bg-slate-800/90 text-slate-300 text-xs font-mono">DNS & Subnet</span>
+              <span class="px-2.5 py-1 rounded-md bg-slate-800/90 text-slate-300 text-xs font-mono">Wi-Fi Diagnostics</span>
+            </div>
+          </div>
+
+          <!-- Bottom Action Link -->
+          <div class="pt-6 mt-6 border-t border-slate-800/80">
+            <a href="https://thangit.com" target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center justify-between w-full px-4 py-2.5 rounded-xl bg-slate-800/70 hover:bg-emerald-500 hover:text-slate-950 text-slate-200 font-semibold text-sm transition-all duration-200 group/btn">
+              <span>Truy cập ThangIT.com</span>
+              <i data-lucide="external-link" class="w-4 h-4 group-hover/btn:translate-x-0.5"></i>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- CARD 2: ThangNhayDay.com -->
+        <div class="relative rounded-3xl p-7 bg-slate-900/60 backdrop-blur-md border border-slate-800 hover:border-amber-500/50 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_15px_35px_-10px_rgba(245,158,11,0.18)] flex flex-col justify-between group">
+          
+          <div>
+            <!-- Top Card Header: Icon & External Badge -->
+            <div class="flex items-center justify-between mb-5">
+              <div class="w-13 h-13 p-3 rounded-2xl bg-amber-500/10 text-amber-400 border border-amber-500/20 group-hover:scale-110 transition-transform">
+                <i data-lucide="flame" class="w-7 h-7"></i>
+              </div>
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-amber-500/10 text-amber-400 border border-amber-500/25">
+                <i data-lucide="heart-pulse" class="w-3.5 h-3.5"></i>
+                <span>Discipline</span>
+              </span>
+            </div>
+
+            <!-- Title & Domain -->
+            <h3 class="text-2xl font-bold text-white group-hover:text-amber-400 transition-colors flex items-center gap-2">
+              ThangNhayDay.com
+              <i data-lucide="arrow-up-right" class="w-5 h-5 text-slate-500 group-hover:text-amber-400 transition-colors"></i>
+            </h3>
+            <p class="text-sm font-semibold text-amber-400/90 mt-1 mb-3">Sức khỏe & Lối sống kỷ luật</p>
+
+            <!-- Description -->
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Hành trình 100 ngày Cardio nhảy dây bứt phá giới hạn, chia sẻ kinh nghiệm rèn luyện thể chất & thiết bị đồ tập chuyên dụng.
+            </p>
+
+            <!-- Feature Tags -->
+            <div class="flex flex-wrap gap-2 mt-5">
+              <span class="px-2.5 py-1 rounded-md bg-slate-800/90 text-slate-300 text-xs font-mono">100-Day Cardio</span>
+              <span class="px-2.5 py-1 rounded-md bg-slate-800/90 text-slate-300 text-xs font-mono">Kỷ luật lối sống</span>
+              <span class="px-2.5 py-1 rounded-md bg-slate-800/90 text-slate-300 text-xs font-mono">Đồ tập chuyên sâu</span>
+              <span class="px-2.5 py-1 rounded-md bg-slate-800/90 text-slate-300 text-xs font-mono">Sức bền & Năng lượng</span>
+            </div>
+          </div>
+
+          <!-- Bottom Action Link -->
+          <div class="pt-6 mt-6 border-t border-slate-800/80">
+            <a href="https://thangnhayday.com" target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center justify-between w-full px-4 py-2.5 rounded-xl bg-slate-800/70 hover:bg-amber-500 hover:text-slate-950 text-slate-200 font-semibold text-sm transition-all duration-200 group/btn">
+              <span>Khám phá ThangNhayDay.com</span>
+              <i data-lucide="external-link" class="w-4 h-4 group-hover/btn:translate-x-0.5"></i>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- CARD 3: Thangnd.io.vn -->
+        <div class="relative rounded-3xl p-7 bg-slate-900/60 backdrop-blur-md border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_15px_35px_-10px_rgba(6,182,212,0.18)] flex flex-col justify-between group">
+          
+          <div>
+            <!-- Top Card Header: Icon & External Badge -->
+            <div class="flex items-center justify-between mb-5">
+              <div class="w-13 h-13 p-3 rounded-2xl bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 group-hover:scale-110 transition-transform">
+                <i data-lucide="cpu" class="w-7 h-7"></i>
+              </div>
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-cyan-500/10 text-cyan-400 border border-cyan-500/25">
+                <i data-lucide="terminal" class="w-3.5 h-3.5"></i>
+                <span>Edge Lab</span>
+              </span>
+            </div>
+
+            <!-- Title & Domain -->
+            <h3 class="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors flex items-center gap-2">
+              Thangnd.io.vn
+              <i data-lucide="arrow-up-right" class="w-5 h-5 text-slate-500 group-hover:text-cyan-400 transition-colors"></i>
+            </h3>
+            <p class="text-sm font-semibold text-cyan-400/90 mt-1 mb-3">Dev Lab & Cloudflare Edge</p>
+
+            <!-- Description -->
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Không gian thử nghiệm kỹ thuật: Serverless Edge (Workers), API Gateway, Bot Webhook và cơ sở dữ liệu phân tán Cloudflare D1.
+            </p>
+
+            <!-- Feature Tags -->
+            <div class="flex flex-wrap gap-2 mt-5">
+              <span class="px-2.5 py-1 rounded-md bg-slate-800/90 text-slate-300 text-xs font-mono">Cloudflare Workers</span>
+              <span class="px-2.5 py-1 rounded-md bg-slate-800/90 text-slate-300 text-xs font-mono">Serverless Edge</span>
+              <span class="px-2.5 py-1 rounded-md bg-slate-800/90 text-slate-300 text-xs font-mono">D1 Distributed SQL</span>
+              <span class="px-2.5 py-1 rounded-md bg-slate-800/90 text-slate-300 text-xs font-mono">Webhook Bots</span>
+            </div>
+          </div>
+
+          <!-- Bottom Action Link -->
+          <div class="pt-6 mt-6 border-t border-slate-800/80">
+            <a href="https://thangnd.io.vn" target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center justify-between w-full px-4 py-2.5 rounded-xl bg-slate-800/70 hover:bg-cyan-500 hover:text-slate-950 text-slate-200 font-semibold text-sm transition-all duration-200 group/btn">
+              <span>Khám phá Lab Thangnd.io.vn</span>
+              <i data-lucide="external-link" class="w-4 h-4 group-hover/btn:translate-x-0.5"></i>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- 4. KINH NGHIỆM LÀM VIỆC (Timeline chi tiết)                             -->
+    <!-- ======================================================================= -->
+    <section id="experience" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-slate-850/80">
+      
+      <!-- Section Title Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-xs font-medium text-emerald-400">
+          <i data-lucide="briefcase" class="w-3.5 h-3.5"></i>
+          <span>CAREER TIMELINE</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          Kinh Nghiệm Làm Việc Thực Chiến
+        </h2>
+        <p class="text-sm sm:text-base text-slate-400">
+          Hành trình hơn một thập kỷ trực tiếp thiết kế, triển khai và vận hành hệ thống IT & mạng cho các tập đoàn đa quốc gia.
+        </p>
+      </div>
+
+      <!-- Vertical Timeline Wrapper -->
+      <div class="relative max-w-4xl mx-auto">
+        
+        <!-- Central Line -->
+        <div class="absolute left-4 sm:left-8 top-3 bottom-3 w-0.5 bg-gradient-to-b from-emerald-500 via-teal-500 to-slate-800"></div>
+
+        <!-- TIMELINE ITEM 1 (04/2025 - Hiện tại) -->
+        <div class="relative pl-12 sm:pl-20 pb-14 group">
+          
+          <!-- Node Icon / Dot -->
+          <div class="absolute left-2 sm:left-6 top-1.5 -translate-x-1/2 w-6 h-6 rounded-full bg-emerald-500 border-4 border-slate-950 shadow-[0_0_15px_rgba(16,185,129,0.8)] z-10"></div>
+          
+          <!-- Content Card -->
+          <div class="p-6 sm:p-8 rounded-3xl bg-slate-900/70 backdrop-blur-md border border-slate-800 hover:border-emerald-500/40 transition-all duration-300 hover:shadow-xl">
+            
+            <!-- Header: Time Badge & Title -->
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold font-mono bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
+                <i data-lucide="clock" class="w-3.5 h-3.5"></i>
+                04/2025 - Hiện tại
+              </span>
+              <span class="text-xs font-medium text-slate-400 flex items-center gap-1">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5 text-emerald-400"></i>
+                Bắc Ninh, Việt Nam
+              </span>
+            </div>
+
+            <h3 class="text-xl sm:text-2xl font-bold text-white group-hover:text-emerald-400 transition-colors">
+              Senior IT Network Engineer
+            </h3>
+            <p class="text-sm sm:text-base font-semibold text-slate-300 mt-1 mb-4">
+              Chi nhánh Công ty TNHH Behn Meyer Việt Nam tại Bắc Ninh
+            </p>
+
+            <!-- Responsibilities & Achievements -->
+            <ul class="space-y-2.5 text-sm sm:text-base text-slate-300">
+              <li class="flex items-start gap-3">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-400 shrink-0 mt-0.5"></i>
+                <span>Quản trị toàn bộ hạ tầng mạng và hệ thống CNTT chi nhánh.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-400 shrink-0 mt-0.5"></i>
+                <span>Đảm bảo vận hành ổn định hệ thống LAN/WAN, WiFi, thiết bị ngoại vi và hỗ trợ người dùng cuối.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-400 shrink-0 mt-0.5"></i>
+                <span>Ứng dụng <strong class="text-emerald-400 font-semibold">Python/Flask</strong> xây dựng hệ thống tự động hóa đơn hàng, tối ưu quy trình phối hợp vận chuyển.</span>
+              </li>
+            </ul>
+
+            <!-- Tech Badges -->
+            <div class="flex flex-wrap gap-2 mt-5 pt-4 border-t border-slate-800/70">
+              <span class="px-2.5 py-1 rounded bg-slate-800 text-xs font-mono text-slate-300">Python</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800 text-xs font-mono text-slate-300">Flask API</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800 text-xs font-mono text-slate-300">LAN/WAN</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800 text-xs font-mono text-slate-300">Enterprise WiFi</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800 text-xs font-mono text-slate-300">Process Automation</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- TIMELINE ITEM 2 (10/2016 - 03/2025) -->
+        <div class="relative pl-12 sm:pl-20 pb-14 group">
+          
+          <!-- Node Icon / Dot -->
+          <div class="absolute left-2 sm:left-6 top-1.5 -translate-x-1/2 w-6 h-6 rounded-full bg-cyan-500 border-4 border-slate-950 shadow-[0_0_15px_rgba(6,182,212,0.8)] z-10"></div>
+          
+          <!-- Content Card -->
+          <div class="p-6 sm:p-8 rounded-3xl bg-slate-900/70 backdrop-blur-md border border-slate-800 hover:border-cyan-500/40 transition-all duration-300 hover:shadow-xl">
+            
+            <!-- Header: Time Badge & Title -->
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold font-mono bg-cyan-500/10 text-cyan-400 border border-cyan-500/30">
+                <i data-lucide="clock" class="w-3.5 h-3.5"></i>
+                10/2016 - 03/2025 (8.5 năm)
+              </span>
+              <span class="text-xs font-medium text-slate-400 flex items-center gap-1">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5 text-cyan-400"></i>
+                Bắc Ninh & Hà Nội
+              </span>
+            </div>
+
+            <h3 class="text-xl sm:text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">
+              IT Network Engineer
+            </h3>
+            <p class="text-sm sm:text-base font-semibold text-slate-300 mt-1 mb-4">
+              Công ty TNHH DBSCHENKER Việt Nam (Kho VSIP Bắc Ninh - Kho Đại Đồng - Kho Quảng An)
+            </p>
+
+            <!-- Responsibilities & Achievements -->
+            <ul class="space-y-2.5 text-sm sm:text-base text-slate-300">
+              <li class="flex items-start gap-3">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-cyan-400 shrink-0 mt-0.5"></i>
+                <span>Thiết kế và triển khai hạ tầng mạng cho hệ thống kho vận quy mô lớn (<strong class="text-white font-medium">30.000 - 40.000 m²</strong>).</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-cyan-400 shrink-0 mt-0.5"></i>
+                <span>Quản lý hơn <strong class="text-cyan-400 font-semibold">500 thiết bị IT</strong>, vận hành hệ thống Server, LAN, VLANs, Wi-Fi công nghiệp chịu tải cao.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-cyan-400 shrink-0 mt-0.5"></i>
+                <span>Quản trị Azure Domain, Office 365 và hỗ trợ kỹ thuật cho các hệ thống ERP chuyên sâu (<strong class="text-white font-medium">WMS, SAP</strong>).</span>
+              </li>
+            </ul>
+
+            <!-- Tech Badges -->
+            <div class="flex flex-wrap gap-2 mt-5 pt-4 border-t border-slate-800/70">
+              <span class="px-2.5 py-1 rounded bg-slate-800 text-xs font-mono text-slate-300">Cisco / Aruba</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800 text-xs font-mono text-slate-300">VLANs / L2-L3</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800 text-xs font-mono text-slate-300">Industrial Wi-Fi</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800 text-xs font-mono text-slate-300">Azure Domain</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800 text-xs font-mono text-slate-300">Office 365</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800 text-xs font-mono text-slate-300">WMS & SAP</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- TIMELINE ITEM 3 (11/2015 - 08/2016) -->
+        <div class="relative pl-12 sm:pl-20 group">
+          
+          <!-- Node Icon / Dot -->
+          <div class="absolute left-2 sm:left-6 top-1.5 -translate-x-1/2 w-6 h-6 rounded-full bg-slate-600 border-4 border-slate-950 shadow-[0_0_10px_rgba(100,116,139,0.5)] z-10"></div>
+          
+          <!-- Content Card -->
+          <div class="p-6 sm:p-8 rounded-3xl bg-slate-900/70 backdrop-blur-md border border-slate-800 hover:border-slate-700 transition-all duration-300 hover:shadow-xl">
+            
+            <!-- Header: Time Badge & Title -->
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold font-mono bg-slate-800 text-slate-300 border border-slate-700">
+                <i data-lucide="clock" class="w-3.5 h-3.5"></i>
+                11/2015 - 08/2016
+              </span>
+              <span class="text-xs font-medium text-slate-400 flex items-center gap-1">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5 text-slate-400"></i>
+                Hà Nội, Việt Nam
+              </span>
+            </div>
+
+            <h3 class="text-xl sm:text-2xl font-bold text-white group-hover:text-slate-200 transition-colors">
+              IT Staff
+            </h3>
+            <p class="text-sm sm:text-base font-semibold text-slate-300 mt-1 mb-4">
+              Công ty TNHH Srithai Hà Nội
+            </p>
+
+            <!-- Responsibilities & Achievements -->
+            <ul class="space-y-2.5 text-sm sm:text-base text-slate-300">
+              <li class="flex items-start gap-3">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-slate-400 shrink-0 mt-0.5"></i>
+                <span>Xây dựng hạ tầng mạng nội bộ, hệ thống Camera giám sát và tổng đài thoại công ty.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-slate-400 shrink-0 mt-0.5"></i>
+                <span>Quản trị người dùng và hỗ trợ kỹ thuật phần mềm ERP <strong class="text-white font-medium">Microsoft Dynamics AX</strong>.</span>
+              </li>
+            </ul>
+
+            <!-- Tech Badges -->
+            <div class="flex flex-wrap gap-2 mt-5 pt-4 border-t border-slate-800/70">
+              <span class="px-2.5 py-1 rounded bg-slate-800 text-xs font-mono text-slate-300">Internal Network</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800 text-xs font-mono text-slate-300">VoIP PBX</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800 text-xs font-mono text-slate-300">CCTV System</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800 text-xs font-mono text-slate-300">Microsoft Dynamics AX</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- 5. KỸ NĂNG KỸ THUẬT & HỌC VẤN (Layout 2 cột trên Desktop)              -->
+    <!-- ======================================================================= -->
+    <section id="skills" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-slate-850/80">
+      
+      <!-- Section Title Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-xs font-medium text-emerald-400">
+          <i data-lucide="layers" class="w-3.5 h-3.5"></i>
+          <span>CORE EXPERTISE</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          Kỹ Năng Kỹ Thuật & Học Vấn
+        </h2>
+        <p class="text-sm sm:text-base text-slate-400">
+          Tập hợp năng lực chuyên môn thực tiễn được rèn giũa qua các dự án lớn cùng nền tảng đào tạo chuyên sâu.
+        </p>
+      </div>
+
+      <!-- 2 Columns Grid on Desktop -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10">
+        
+        <!-- CỘT KỸ NĂNG (7/12 cột) -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="flex items-center gap-3 mb-2">
+            <div class="p-2 rounded-xl bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+              <i data-lucide="wrench" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white">Năng Lực Kỹ Thuật Chuyên Sâu</h3>
+          </div>
+
+          <!-- Group 1: Hạ tầng & Mạng -->
+          <div class="p-6 rounded-2xl bg-slate-900/70 border border-slate-800 hover:border-emerald-500/40 transition-all">
+            <div class="flex items-center gap-2.5 text-emerald-400 font-semibold text-sm mb-3">
+              <i data-lucide="network" class="w-4 h-4"></i>
+              <span>Hạ tầng & Mạng (Network Infrastructure)</span>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1.5 rounded-lg bg-slate-800/90 text-slate-200 text-xs font-medium border border-slate-700/60 hover:border-emerald-500/40 transition-colors">Cisco</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-800/90 text-slate-200 text-xs font-medium border border-slate-700/60 hover:border-emerald-500/40 transition-colors">Aruba Networks</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-800/90 text-slate-200 text-xs font-medium border border-slate-700/60 hover:border-emerald-500/40 transition-colors">MikroTik RouterOS</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-800/90 text-slate-200 text-xs font-medium border border-slate-700/60 hover:border-emerald-500/40 transition-colors">LAN / WAN</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-800/90 text-slate-200 text-xs font-medium border border-slate-700/60 hover:border-emerald-500/40 transition-colors">VLANs / Routing</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-800/90 text-slate-200 text-xs font-medium border border-slate-700/60 hover:border-emerald-500/40 transition-colors">Wi-Fi Công Nghiệp</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-800/90 text-slate-200 text-xs font-medium border border-slate-700/60 hover:border-emerald-500/40 transition-colors">Firewall & Security</span>
+            </div>
+          </div>
+
+          <!-- Group 2: Máy chủ & Ảo hóa -->
+          <div class="p-6 rounded-2xl bg-slate-900/70 border border-slate-800 hover:border-cyan-500/40 transition-all">
+            <div class="flex items-center gap-2.5 text-cyan-400 font-semibold text-sm mb-3">
+              <i data-lucide="server" class="w-4 h-4"></i>
+              <span>Máy chủ & Ảo hóa (Servers & Cloud)</span>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1.5 rounded-lg bg-slate-800/90 text-slate-200 text-xs font-medium border border-slate-700/60 hover:border-cyan-500/40 transition-colors">Windows Server</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-800/90 text-slate-200 text-xs font-medium border border-slate-700/60 hover:border-cyan-500/40 transition-colors">VMware ESXi</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-800/90 text-slate-200 text-xs font-medium border border-slate-700/60 hover:border-cyan-500/40 transition-colors">Active Directory Domain</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-800/90 text-slate-200 text-xs font-medium border border-slate-700/60 hover:border-cyan-500/40 transition-colors">Azure Domain (Entra ID)</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-800/90 text-slate-200 text-xs font-medium border border-slate-700/60 hover:border-cyan-500/40 transition-colors">Microsoft Office 365</span>
+            </div>
+          </div>
+
+          <!-- Group 3: Tự động hóa & Lập trình -->
+          <div class="p-6 rounded-2xl bg-slate-900/70 border border-slate-800 hover:border-emerald-500/40 transition-all">
+            <div class="flex items-center gap-2.5 text-emerald-400 font-semibold text-sm mb-3">
+              <i data-lucide="code-2" class="w-4 h-4"></i>
+              <span>Tự động hóa & Lập trình (Automation & Dev)</span>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1.5 rounded-lg bg-slate-800/90 text-slate-200 text-xs font-medium border border-slate-700/60 hover:border-emerald-500/40 transition-colors">Python</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-800/90 text-slate-200 text-xs font-medium border border-slate-700/60 hover:border-emerald-500/40 transition-colors">Flask</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-800/90 text-slate-200 text-xs font-medium border border-slate-700/60 hover:border-emerald-500/40 transition-colors">RESTful API</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-800/90 text-slate-200 text-xs font-medium border border-slate-700/60 hover:border-emerald-500/40 transition-colors">AI Tools & Prompts</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-800/90 text-slate-200 text-xs font-medium border border-slate-700/60 hover:border-emerald-500/40 transition-colors">Cloudflare Workers Edge</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-800/90 text-slate-200 text-xs font-medium border border-slate-700/60 hover:border-emerald-500/40 transition-colors">Serverless Computing</span>
+            </div>
+          </div>
+
+          <!-- Group 4: Hệ thống doanh nghiệp -->
+          <div class="p-6 rounded-2xl bg-slate-900/70 border border-slate-800 hover:border-amber-500/40 transition-all">
+            <div class="flex items-center gap-2.5 text-amber-400 font-semibold text-sm mb-3">
+              <i data-lucide="shield-check" class="w-4 h-4"></i>
+              <span>Hệ thống Doanh nghiệp & Vận hành</span>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1.5 rounded-lg bg-slate-800/90 text-slate-200 text-xs font-medium border border-slate-700/60 hover:border-amber-500/40 transition-colors">ERP (SAP & WMS)</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-800/90 text-slate-200 text-xs font-medium border border-slate-700/60 hover:border-amber-500/40 transition-colors">Microsoft Dynamics AX</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-800/90 text-slate-200 text-xs font-medium border border-slate-700/60 hover:border-amber-500/40 transition-colors">Camera An Ninh (CCTV)</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-800/90 text-slate-200 text-xs font-medium border border-slate-700/60 hover:border-amber-500/40 transition-colors">Hệ Thống Giám Sát 24/7</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- CỘT HỌC VẤN (5/12 cột) -->
+        <div class="lg:col-span-5 space-y-6">
+          <div class="flex items-center gap-3 mb-2">
+            <div class="p-2 rounded-xl bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">
+              <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white">Nền Tảng Học Vấn</h3>
+          </div>
+
+          <!-- Bằng Đại Học -->
+          <div class="p-6 sm:p-7 rounded-2xl bg-slate-900/70 border border-slate-800 hover:border-cyan-500/40 transition-all space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono font-semibold px-2.5 py-1 rounded bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">
+                03/2013 - 06/2015
+              </span>
+              <i data-lucide="award" class="w-5 h-5 text-cyan-400"></i>
+            </div>
+            <h4 class="text-lg font-bold text-white">Đại học Điện Lực</h4>
+            <p class="text-sm font-medium text-cyan-400">Chuyên ngành: Công nghệ thông tin</p>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Trang bị kiến thức nền tảng vững chắc về hệ thống máy tính, thuật toán, cơ sở dữ liệu và quản trị kiến trúc mạng doanh nghiệp.
+            </p>
+          </div>
+
+          <!-- Bách Khoa Aptech -->
+          <div class="p-6 sm:p-7 rounded-2xl bg-slate-900/70 border border-slate-800 hover:border-emerald-500/40 transition-all space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono font-semibold px-2.5 py-1 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                08/2010 - 03/2013
+              </span>
+              <i data-lucide="shield" class="w-5 h-5 text-emerald-400"></i>
+            </div>
+            <h4 class="text-lg font-bold text-white">Bách Khoa - Aptech</h4>
+            <p class="text-sm font-medium text-emerald-400">Chuyên ngành: Quản trị mạng và bảo mật hệ thống HDSM</p>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Đào tạo thực chiến chuyên sâu theo chuẩn quốc tế: Quản trị hạ tầng mạng Cisco, hệ thống Microsoft Windows Server, định tuyến nâng cao và bảo mật thông tin.
+            </p>
+          </div>
+
+          <!-- Đột phá & Định hướng -->
+          <div class="p-6 rounded-2xl bg-gradient-to-br from-slate-900/90 to-slate-950/90 border border-slate-800/90 space-y-2.5">
+            <div class="flex items-center gap-2 text-slate-200 text-xs font-semibold uppercase tracking-wider">
+              <i data-lucide="compass" class="w-4 h-4 text-emerald-400"></i>
+              <span>Phương Châm Nghề Nghiệp</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-300 italic leading-relaxed">
+              "Kết hợp kinh nghiệm vận hành hạ tầng mạng thực chiến cùng tư duy tự động hoá bằng code (AIOps/Python) và sự kỷ luật nghiêm ngặt mỗi ngày."
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- 6. LIÊN HỆ & FOOTER (Tối giản kênh liên lạc & Bản quyền)                 -->
+    <!-- ======================================================================= -->
+    <section id="contact" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12 border-t border-slate-850/80">
+      
+      <!-- Hộp liên hệ nhanh (Quick Contact Box) -->
+      <div class="relative rounded-3xl p-8 sm:p-12 bg-gradient-to-b from-slate-900/90 via-slate-900/70 to-slate-950/90 border border-slate-800 shadow-2xl overflow-hidden">
+        
+        <!-- Glow trang trí góc -->
+        <div class="absolute -right-20 -top-20 w-80 h-80 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -left-20 -bottom-20 w-80 h-80 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <!-- Tiêu đề & Giới thiệu liên hệ -->
+          <div class="lg:col-span-6 space-y-4">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800 border border-slate-700 text-xs font-medium text-emerald-400">
+              <i data-lucide="send" class="w-3.5 h-3.5"></i>
+              <span>SẴN SÀNG KẾT NỐI</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+              Trao Đổi Công Việc & Hợp Tác Dự Án
+            </h2>
+            <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+              Quý doanh nghiệp và đối tác có thể liên hệ trực tiếp với tôi qua điện thoại, Zalo hoặc Email để trao đổi về các vị trí Senior IT Network Engineer, tư vấn triển khai hạ tầng kho vận hoặc giải pháp AIOps.
+            </p>
+
+            <div class="flex items-center gap-2 text-xs text-slate-400">
+              <i data-lucide="map-pin" class="w-4 h-4 text-emerald-400"></i>
+              <span>Khu vực ưu tiên: <strong class="text-slate-200">Hà Nội - Bắc Ninh</strong> (Onsite / Hybrid / Remote)</span>
+            </div>
+          </div>
+
+          <!-- Thông tin liên hệ dạng thẻ tương tác -->
+          <div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            
+            <!-- Thẻ Điện thoại & Zalo -->
+            <div class="p-5 rounded-2xl bg-slate-950/70 border border-slate-800 hover:border-emerald-500/50 transition-all flex flex-col justify-between group">
+              <div>
+                <div class="flex items-center justify-between text-slate-400 mb-2">
+                  <span class="text-xs font-medium">Số điện thoại & Zalo</span>
+                  <div class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center">
+                    <i data-lucide="phone-call" class="w-4 h-4"></i>
+                  </div>
+                </div>
+                <div class="text-lg font-bold text-white group-hover:text-emerald-400 transition-colors font-mono">
+                  0986.192.092
+                </div>
+              </div>
+              <div class="flex items-center gap-2 pt-4 mt-3 border-t border-slate-800/80">
+                <a href="tel:0986192092" class="text-xs font-semibold text-emerald-400 hover:underline flex items-center gap-1">
+                  <i data-lucide="phone" class="w-3.5 h-3.5"></i> Gọi ngay
+                </a>
+                <span class="text-slate-600">•</span>
+                <a href="https://zalo.me/0986192092" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-emerald-400 hover:underline flex items-center gap-1">
+                  <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> Mở Zalo
+                </a>
+              </div>
+            </div>
+
+            <!-- Thẻ Email -->
+            <div class="p-5 rounded-2xl bg-slate-950/70 border border-slate-800 hover:border-cyan-500/50 transition-all flex flex-col justify-between group">
+              <div>
+                <div class="flex items-center justify-between text-slate-400 mb-2">
+                  <span class="text-xs font-medium">Email chính thức</span>
+                  <div class="w-8 h-8 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center">
+                    <i data-lucide="mail" class="w-4 h-4"></i>
+                  </div>
+                </div>
+                <div class="text-sm font-bold text-white group-hover:text-cyan-400 transition-colors font-mono break-all">
+                  ducthangqtm@gmail.com
+                </div>
+              </div>
+              <div class="pt-4 mt-3 border-t border-slate-800/80">
+                <a href="mailto:ducthangqtm@gmail.com" class="text-xs font-semibold text-cyan-400 hover:underline flex items-center gap-1">
+                  <i data-lucide="send" class="w-3.5 h-3.5"></i> Gửi email trực tiếp
+                </a>
+              </div>
+            </div>
+
+            <!-- Tải CV nhanh trong Card -->
+            <a href="./assets/docs/cv-nguyen-duc-thang-vi.pdf" download="cv-nguyen-duc-thang-vi.pdf"
+               class="p-4 rounded-xl bg-slate-950/50 hover:bg-emerald-500/10 border border-slate-800 hover:border-emerald-500/40 text-slate-300 hover:text-emerald-400 text-xs font-semibold flex items-center justify-between transition-all">
+              <span class="flex items-center gap-2">
+                <i data-lucide="file-text" class="w-4 h-4 text-emerald-400"></i>
+                <span>Tải CV Tiếng Việt (.pdf)</span>
+              </span>
+              <i data-lucide="download" class="w-4 h-4"></i>
+            </a>
+
+            <!-- Tải CV Tiếng Anh nhanh trong Card -->
+            <a href="./assets/docs/cv-nguyen-duc-thang-en.pdf" download="cv-nguyen-duc-thang-en.pdf"
+               class="p-4 rounded-xl bg-slate-950/50 hover:bg-cyan-500/10 border border-slate-800 hover:border-cyan-500/40 text-slate-300 hover:text-cyan-400 text-xs font-semibold flex items-center justify-between transition-all">
+              <span class="flex items-center gap-2">
+                <i data-lucide="file-code" class="w-4 h-4 text-cyan-400"></i>
+                <span>Tải CV Tiếng Anh (.pdf)</span>
+              </span>
+              <i data-lucide="download" class="w-4 h-4"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Footer Bản quyền & Hạ tầng kỹ thuật -->
+      <footer class="mt-14 pt-8 border-t border-slate-800/80 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+        
+        <div class="flex items-center gap-3">
+          <img src="./assets/images/logo-tit.svg" alt="TiT Logo" class="w-6 h-6">
+          <p>© 2026 <strong class="text-slate-200">Nguyễn Đức Thắng</strong>. Personal Hub & Portfolio triển khai tĩnh trên Cloudflare Pages via GitHub.</p>
+        </div>
+
+        <div class="flex items-center gap-6">
+          <a href="#about" class="hover:text-emerald-400 transition-colors">Về đầu trang ↑</a>
+          <span class="text-slate-700">|</span>
+          <span class="text-slate-500 font-mono">ducthangnguyen.com</span>
+        </div>
+
+      </footer>
+
+    </section>
+
+  </main>
+
+  <!-- Main JavaScript Application -->
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
