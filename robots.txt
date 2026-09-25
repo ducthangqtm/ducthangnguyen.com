@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ducthangnguyen.com/sitemap.xml
