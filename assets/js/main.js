@@ -1,6 +1,6 @@
 /**
  * main.js - Nguyễn Đức Thắng | ducthangnguyen.com
- * Logic điều hướng, menu mobile và khởi chạy Lucide Icons
+ * Logic điều hướng, menu mobile, Lucide Icons và hiệu ứng tương tác
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -43,4 +43,18 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // Hiệu ứng thanh Header khi cuộn trang
+  const header = document.querySelector('header');
+  if (header) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 20) {
+        header.classList.add('shadow-lg', 'shadow-slate-950/40', 'border-slate-800');
+        header.classList.remove('border-slate-800/80');
+      } else {
+        header.classList.remove('shadow-lg', 'shadow-slate-950/40');
+        header.classList.add('border-slate-800/80');
+      }
+    });
+  }
 });
