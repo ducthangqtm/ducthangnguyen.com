@@ -82,7 +82,10 @@
   <!-- External Stylesheet -->
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body class="bg-slate-950 text-slate-100 font-sans selection:bg-emerald-500/25 selection:text-emerald-300 relative min-h-[100dvh] h-[100dvh] flex flex-col justify-between overflow-x-hidden overflow-y-auto sm:overflow-y-auto">
+<body class="bg-slate-950 text-slate-100 font-sans selection:bg-emerald-500/25 selection:text-emerald-300 relative min-h-[100dvh] h-[100dvh] flex flex-col justify-between overflow-x-hidden overflow-y-auto sm:overflow-y-auto isolate">
+
+  <!-- Interactive Rotating Galaxy / Cosmic Starfield Background Canvas -->
+  <canvas id="galaxy-bg" class="fixed inset-0 pointer-events-none z-[-1]"></canvas>
 
   <!-- Ambient Light Effects & Subtle Pattern Background -->
   <div class="fixed inset-0 pointer-events-none z-0 bg-ambient-glow"></div>
