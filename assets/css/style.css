@@ -13,6 +13,7 @@ code, pre, .font-mono {
 /* Tùy chỉnh thanh cuộn Sleek Dark Scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
+  height: 6px;
 }
 ::-webkit-scrollbar-track {
   background: #020617;
@@ -64,4 +65,37 @@ code, pre, .font-mono {
 .compact-card:hover {
   transform: translateY(-2px);
   background: rgba(15, 23, 42, 0.8);
+}
+
+/* Company Tab Button Active / Inactive states */
+.company-tab-btn {
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(51, 65, 85, 0.7);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.company-tab-btn:hover {
+  transform: translateY(-2px);
+  border-color: rgba(16, 185, 129, 0.5);
+  background: rgba(30, 41, 59, 0.8);
+}
+
+.company-tab-btn.active {
+  border-color: #10b981;
+  background: rgba(16, 185, 129, 0.12);
+  box-shadow: 0 0 20px -3px rgba(16, 185, 129, 0.35);
+}
+
+.company-tab-btn.active .company-badge {
+  color: #34d399;
+  border-color: rgba(16, 185, 129, 0.4);
+}
+
+/* Glass panel */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(51, 65, 85, 0.65);
 }
