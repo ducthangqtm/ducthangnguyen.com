@@ -308,52 +308,58 @@
 
             <!-- Tab 1: FM Logistic (Mặc định chọn) -->
             <button type="button" onclick="selectCompany('fm')" id="tab-btn-fm"
-              class="company-tab-btn active flex flex-col items-center text-center p-2.5 sm:p-3 rounded-xl cursor-pointer group">
+              class="company-tab-btn active flex flex-col items-center justify-between text-center p-2 sm:p-2.5 rounded-xl cursor-pointer group">
               <div
-                class="logo-wrapper w-full h-12 sm:h-14 bg-white rounded-lg p-1.5 flex items-center justify-center border border-slate-200 shadow-sm transition-transform group-hover:scale-105">
+                class="logo-wrapper w-full h-14 sm:h-16 bg-white rounded-lg px-2 py-1 flex items-center justify-center border border-slate-200 shadow-sm transition-transform group-hover:scale-[1.02]">
                 <img src="./assets/images/fmlogistic.png" alt="FM Logistic"
-                  class="max-h-full max-w-full object-contain">
+                  class="w-full h-full object-contain">
               </div>
-              <span class="text-xs font-bold text-white mt-2 group-hover:text-emerald-400 transition-colors">FM
-                Logistic</span>
-              <span class="company-badge text-[10px] text-emerald-400 font-mono mt-0.5">10/2026 - Hiện tại</span>
+              <div class="mt-2">
+                <span class="text-xs sm:text-[13px] font-bold text-white block group-hover:text-emerald-400 transition-colors">FM Logistic</span>
+                <span class="company-badge text-[10px] text-emerald-400 font-mono">10/2026 - Nay</span>
+              </div>
             </button>
 
             <!-- Tab 2: Behn Meyer -->
             <button type="button" onclick="selectCompany('bm')" id="tab-btn-bm"
-              class="company-tab-btn flex flex-col items-center text-center p-2.5 sm:p-3 rounded-xl cursor-pointer group">
+              class="company-tab-btn flex flex-col items-center justify-between text-center p-2 sm:p-2.5 rounded-xl cursor-pointer group">
               <div
-                class="logo-wrapper w-full h-12 sm:h-14 bg-white rounded-lg p-1.5 flex items-center justify-center border border-slate-200 shadow-sm transition-transform group-hover:scale-105">
-                <img src="./assets/images/behnmeyer.png" alt="Behn Meyer" class="max-h-full max-w-full object-contain">
+                class="logo-wrapper w-full h-14 sm:h-16 bg-white rounded-lg px-2 py-1 flex items-center justify-center border border-slate-200 shadow-sm transition-transform group-hover:scale-[1.02]">
+                <img src="./assets/images/behnmeyer.png" alt="Behn Meyer" 
+                  class="w-full h-full object-contain">
               </div>
-              <span class="text-xs font-bold text-white mt-2 group-hover:text-emerald-400 transition-colors">Behn
-                Meyer</span>
-              <span class="company-badge text-[10px] text-slate-400 font-mono mt-0.5">04/2025 - 10/2026</span>
+              <div class="mt-2">
+                <span class="text-xs sm:text-[13px] font-bold text-white block group-hover:text-emerald-400 transition-colors">Behn Meyer</span>
+                <span class="company-badge text-[10px] text-slate-400 font-mono">04/2025 - 10/2026</span>
+              </div>
             </button>
 
             <!-- Tab 3: DB Schenker -->
             <button type="button" onclick="selectCompany('dbs')" id="tab-btn-dbs"
-              class="company-tab-btn flex flex-col items-center text-center p-2.5 sm:p-3 rounded-xl cursor-pointer group">
+              class="company-tab-btn flex flex-col items-center justify-between text-center p-2 sm:p-2.5 rounded-xl cursor-pointer group">
               <div
-                class="logo-wrapper w-full h-12 sm:h-14 bg-white rounded-lg p-1.5 flex items-center justify-center border border-slate-200 shadow-sm transition-transform group-hover:scale-105">
+                class="logo-wrapper w-full h-14 sm:h-16 bg-white rounded-lg px-2 py-1 flex items-center justify-center border border-slate-200 shadow-sm transition-transform group-hover:scale-[1.02]">
                 <img src="./assets/images/dbschenker.svg" alt="DB Schenker"
-                  class="max-h-full max-w-full object-contain">
+                  class="w-full h-full object-contain">
               </div>
-              <span class="text-xs font-bold text-white mt-2 group-hover:text-emerald-400 transition-colors">DB
-                Schenker</span>
-              <span class="company-badge text-[10px] text-slate-400 font-mono mt-0.5">10/2016 - 03/2025</span>
+              <div class="mt-2">
+                <span class="text-xs sm:text-[13px] font-bold text-white block group-hover:text-emerald-400 transition-colors">DB Schenker</span>
+                <span class="company-badge text-[10px] text-slate-400 font-mono">10/2016 - 03/2025</span>
+              </div>
             </button>
 
             <!-- Tab 4: Srithai -->
             <button type="button" onclick="selectCompany('srithai')" id="tab-btn-srithai"
-              class="company-tab-btn flex flex-col items-center text-center p-2.5 sm:p-3 rounded-xl cursor-pointer group">
+              class="company-tab-btn flex flex-col items-center justify-between text-center p-2 sm:p-2.5 rounded-xl cursor-pointer group">
               <div
-                class="logo-wrapper w-full h-12 sm:h-14 bg-white rounded-lg p-1.5 flex items-center justify-center border border-slate-200 shadow-sm transition-transform group-hover:scale-105">
-                <img src="./assets/images/srithai.png" alt="Srithai" class="max-h-full max-w-full object-contain">
+                class="logo-wrapper w-full h-14 sm:h-16 bg-white rounded-lg px-2 py-1 flex items-center justify-center border border-slate-200 shadow-sm transition-transform group-hover:scale-[1.02]">
+                <img src="./assets/images/srithai.png" alt="Srithai" 
+                  class="w-full h-full object-contain">
               </div>
-              <span class="text-xs font-bold text-white mt-2 group-hover:text-emerald-400 transition-colors">Srithai Hà
-                Nội</span>
-              <span class="company-badge text-[10px] text-slate-400 font-mono mt-0.5">11/2015 - 08/2016</span>
+              <div class="mt-2">
+                <span class="text-xs sm:text-[13px] font-bold text-white block group-hover:text-emerald-400 transition-colors">Srithai Hà Nội</span>
+                <span class="company-badge text-[10px] text-slate-400 font-mono">11/2015 - 08/2016</span>
+              </div>
             </button>
 
           </div>
